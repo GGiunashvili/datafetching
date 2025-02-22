@@ -1,12 +1,11 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 
 const FetchDataComponent = () => {
   const [data, setData] = useState<any>(null);
 
   useEffect(() => {
-    // მონაცემების გამოწერა JSONPlaceholder API-დან
     const fetchData = async () => {
       try {
         const response = await fetch(
@@ -14,18 +13,26 @@ const FetchDataComponent = () => {
         );
         const result = await response.json();
         setData(result);
-        console.log(result); // მონაცემების გამოჩენა კონსოლში
       } catch (error) {
         console.error("Error fetching data:", error);
       }
     };
 
     fetchData();
-  }, []); // useEffect მხოლოდ კომპონენტის პირველადი დატვირთვის დროს შეასრულებს
+  }, []);
 
   return (
     <div>
-      {data ? <pre>{JSON.stringify(data, null, 2)}</pre> : "Loading..."}
+      {data && (
+        <ul className="flex flex-col gap-x-[20px] gap-y-[10px] p-[40px] ">
+          {data.map((item: any) => (
+            <React.Fragment key={item.id}>
+              <li>{item.title}</li>
+              <li className="border-b border-red mb-[20px]">{item.id}</li>
+            </React.Fragment>
+          ))}
+        </ul>
+      )}
     </div>
   );
 };
