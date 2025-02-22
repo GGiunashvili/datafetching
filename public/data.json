@@ -1,0 +1,62 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "title": "Item 1",
+      "name": "Michael",
+      "surname": "Brown",
+      "profession": "Software Engineer",
+      "careerHistory": [
+        { "year": 2015, "position": "Junior Developer", "company": "TechCorp" },
+        {
+          "year": 2017,
+          "position": "Mid-level Developer",
+          "company": "DevSolutions"
+        },
+        {
+          "year": 2020,
+          "position": "Software Engineer",
+          "company": "InnovateTech"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "title": "Item 2",
+      "name": "Sarah",
+      "surname": "Williams",
+      "profession": "Graphic Designer",
+      "careerHistory": [
+        { "year": 2016, "position": "Junior Designer", "company": "CreativeX" },
+        {
+          "year": 2018,
+          "position": "Senior Designer",
+          "company": "DesignPlus"
+        },
+        { "year": 2021, "position": "Lead Designer", "company": "ArtWorks" }
+      ]
+    },
+    {
+      "id": 3,
+      "title": "Item 3",
+      "name": "David",
+      "surname": "Smith",
+      "profession": "Product Manager",
+      "careerHistory": [
+        { "year": 2012, "position": "Junior PM", "company": "TechSolutions" },
+        { "year": 2015, "position": "PM", "company": "GrowthCo" },
+        { "year": 2019, "position": "Senior PM", "company": "FutureTech" }
+      ]
+    }
+  ],
+  "otherData": [
+    {
+      "id": 1,
+      "description": "Other Data 1"
+    },
+    {
+      "id": 2,
+      "description": "Other Data 2"
+    }
+  ]
+}

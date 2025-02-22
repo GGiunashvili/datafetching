@@ -1,5 +1,6 @@
-import Image from "next/image";
-import FetchDataComponent from "./components/FetchDataComponent";
+import React from "react";
+
+import FetchDataComponent from "../components/FetchDataComponent";
 
 export default function Home() {
   return (
