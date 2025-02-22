@@ -1,4 +1,8 @@
-import React from "react";
+// app/users/loading.tsx
 export default function Loading() {
-  return <h1 className="bg-purple-100">Loading...</h1>;
+  return (
+    <div className="bg-red-100 h-full flex justify-center items-center">
+      <h1>Loading...</h1> {/* დამატება შეგიძლიათ, რომ სიმაგრებისთვის ფორმა */}
+    </div>
+  );
 }
