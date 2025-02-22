@@ -1,11 +1,11 @@
 import React from "react";
 
-import FetchDataComponent from "../components/FetchDataComponent";
+import GetData from "../components/GetData";
 
 export default function Home() {
   return (
     <div>
-      <FetchDataComponent />
+      <GetData />
     </div>
   );
 }
