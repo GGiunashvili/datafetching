@@ -1,0 +1,12 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "Giorgi Giunashvili"
+    },
+    {
+      "id": 2,
+      "name": "Brad Pit"
+    }
+  ]
+}
