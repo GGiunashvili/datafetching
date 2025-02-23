@@ -9,6 +9,7 @@ export default async function Page() {
         title: "newname",
         content: "200",
       }),
+      cache: "no-store",
     });
     if (!response.ok) {
       throw new Error(`Network response was not ok ${response.status}`);
