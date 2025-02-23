@@ -1,12 +1,14 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Giorgi Giunashvili"
+      "age": "22",
+      "name": "john",
+      "id": 1
     },
     {
-      "id": 2,
-      "name": "Brad Pit"
+      "age": "34",
+      "name": "walter",
+      "id": 2
     }
   ]
 }
